@@ -49,10 +49,10 @@ export default function Footer() {
               +260 571434300
             </a>
             <a
-              href="mailto:info@rileys.com"
+              href="mailto:INFO@RILEYSPUBANDGRILL.COM"
               className="font-extrabold text-xs sm:text-[13px] tracking-wider uppercase text-[#e8ded6] hover:text-white transition-colors font-sans"
             >
-              INFO@RILEYS.COM
+              INFO@RILEYSPUBANDGRILL.COM
             </a>
           </div>
 

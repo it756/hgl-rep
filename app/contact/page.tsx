@@ -69,19 +69,8 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
         </div>
 
-        {/* Top Metadata */}
-        <div className="relative z-10 flex justify-between items-center text-white/80 font-meta-bracket text-xs uppercase tracking-widest">
-          <Link href="/" className="hover:text-white transition-colors">
-            [Riley’s Atelier]
-          </Link>
-          <span>[Lusaka • Zambia]</span>
-        </div>
-
         {/* Bottom Giant CONTACT Typography */}
         <div className="relative z-10 pt-32 sm:pt-48 lg:pt-0 mt-auto select-none">
-          <span className="font-meta-bracket text-xs text-white/70 uppercase tracking-widest block mb-2">
-            [Direct Concierge &amp; Inquiries]
-          </span>
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-[-0.04em] uppercase leading-[0.82] drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]">
             CONTACT
           </h1>
@@ -98,9 +87,6 @@ export default function ContactPage() {
               className="bg-[#ede6db] border border-[#d5cbbf] p-8 sm:p-10 text-center space-y-4"
             >
               <CheckCircle2 className="w-12 h-12 text-[#2c221e] mx-auto" />
-              <span className="font-meta-bracket text-xs text-secondary uppercase block">
-                [Inquiry Transmitted]
-              </span>
               <h2 className="text-3xl font-extrabold uppercase tracking-tight text-primary">
                 Thank You For Reaching Out
               </h2>
@@ -121,9 +107,6 @@ export default function ContactPage() {
           ) : (
             <div>
               <div className="mb-8">
-                <span className="font-meta-bracket text-xs text-secondary uppercase block mb-1">
-                  [Direct Concierge]
-                </span>
                 <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-primary">
                   Get in Touch
                 </h2>

@@ -202,19 +202,22 @@ export default function AboutSection() {
           ABOUT RILEY&apos;S
         </h2>
 
-        <p className="font-extrabold text-sm sm:text-base md:text-lg tracking-[0.16em] uppercase text-[#3f312b] max-w-3xl mx-auto leading-relaxed mb-8 font-sans">
-          RILEY&apos;S IS A CONTEMPORARY PUB AND GRILL THAT BRINGS A CURATED
-          SELECTION OF FOOD, WINE, SPIRITS, BEERS, AND COCKTAILS TO YOU WHETHER
-          YOU&apos;RE SEATED IN OUR SPACE OR AT HOME, - A NICE TIME ANYWHERE YOU
-          ARE !
+        <p className="font-sans font-medium text-base sm:text-lg md:text-xl  text-[#3f312b] max-w-3xl mx-auto leading-relaxed mb-8">
+          Riley&apos;s is a contemporary pub and grill that brings a curated
+          selection of food, wine, spirits, beers, and cocktails to you whether
+          you&apos;re seated in our space or at home — a nice time anywhere you
+          are.
         </p>
 
         <div>
           <Link
-            href="/menu"
-            className="inline-block bg-[#2c221e] text-[#f6f2ea] font-extrabold text-xs sm:text-[13px] tracking-[0.18em] uppercase px-8 py-3.5 hover:bg-[#43342e] active:scale-[0.98] transition-all duration-200 shadow-sm"
+            href="/about"
+            className="group inline-flex items-center gap-2 border border-[#2c221e] bg-[#2c221e] text-[#f6f2ea] font-extrabold text-xs sm:text-[13px] tracking-[0.18em] uppercase px-8 py-3.5 hover:bg-[#f6f2ea] hover:text-[#2c221e] active:scale-[0.98] transition-all duration-300 shadow-sm"
           >
-            DISCOVER MORE
+            <span>DISCOVER MORE</span>
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1.5 font-sans font-bold text-sm">
+              →
+            </span>
           </Link>
         </div>
       </div>

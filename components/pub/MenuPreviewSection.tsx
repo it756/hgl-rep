@@ -149,7 +149,7 @@ export default function MenuPreviewSection() {
       image: item.image,
       quantity: 1,
     });
-    toast.success(`Added ${item.name} to requisition tray.`);
+    toast.success(`Added ${item.name} to cart.`);
   };
 
   return (

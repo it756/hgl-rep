@@ -113,6 +113,15 @@ const config: Config = {
           "Roboto",
           "sans-serif",
         ],
+        condensed: [
+          "'Anton'",
+          "'Oswald'",
+          "'Bebas Neue'",
+          "'Hanken Grotesk'",
+          "sans-serif",
+        ],
+        anton: ["'Anton'", "sans-serif"],
+        oswald: ["'Oswald'", "sans-serif"],
         "display-hero": [
           "'Hanken Grotesk'",
           "-apple-system",

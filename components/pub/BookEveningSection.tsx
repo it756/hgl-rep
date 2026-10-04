@@ -34,9 +34,9 @@ export default function BookEveningSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-extrabold text-xs sm:text-sm md:text-base tracking-[0.2em] uppercase text-[#3f312b] max-w-2xl mx-auto leading-relaxed mb-8 font-sans"
+            className="font-extrabold text-xs sm:text-sm md:text-base   text-[#3f312b] max-w-2xl mx-auto leading-relaxed mb-8 font-sans"
           >
-            PRIVATE MOMENTS, SEASONAL DISHES, AND A WARM LUSAKA SETTING.
+            Private moments, seasonal dishes, and a warm Lusaka setting.
           </motion.p>
 
           {/* Button */}

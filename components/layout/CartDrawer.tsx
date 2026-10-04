@@ -32,9 +32,6 @@ export default function CartDrawer() {
         {/* Header */}
         <div className="p-space-md hairline-b flex items-center justify-between">
           <div>
-            <span className="font-meta-bracket text-meta-bracket text-secondary uppercase block">
-              [Requisition Index]
-            </span>
             <h2 className="font-headline-sm text-headline-sm text-primary uppercase">
               Your Selection (
               {items.reduce((sum, item) => sum + item.quantity, 0)})
@@ -53,12 +50,8 @@ export default function CartDrawer() {
         <div className="flex-1 overflow-y-auto p-space-md flex flex-col gap-space-md">
           {items.length === 0 ? (
             <div className="flex-1 flex flex-col items-center justify-center text-center p-6 text-secondary">
-              <span className="font-meta-bracket text-[13px] uppercase block mb-2">
-                [Archive is Empty]
-              </span>
               <p className="font-body-md mb-6">
-                No extractions or culinary items currently added to your
-                requisition tray.
+                No items currently added to your shopping bag.
               </p>
               <div className="flex flex-col gap-2 w-full max-w-xs">
                 <Link
@@ -152,8 +145,8 @@ export default function CartDrawer() {
         {items.length > 0 && (
           <div className="p-space-md hairline-t bg-surface-container-lowest flex flex-col gap-space-sm">
             <div className="flex items-baseline justify-between">
-              <span className="font-meta-bracket text-meta-bracket text-secondary uppercase">
-                [Subtotal Allocation]
+              <span className="font-action-label text-xs uppercase tracking-wider text-secondary">
+                Subtotal
               </span>
               <span className="font-headline-md text-headline-md font-semibold text-primary">
                 ZMK {total.toFixed(2)}
@@ -161,8 +154,7 @@ export default function CartDrawer() {
             </div>
 
             <p className="font-body-sm text-[11px] text-secondary">
-              Includes complimentary 2ml extraction specimen. Dispatched within
-              24h from Lusaka / Zurich.
+              Dispatched swiftly across Lusaka.
             </p>
 
             <Link
@@ -170,7 +162,7 @@ export default function CartDrawer() {
               onClick={closeCart}
               className="w-full bg-primary text-on-primary py-4 font-action-label text-action-label uppercase tracking-widest text-center hover:bg-secondary transition-colors flex items-center justify-center gap-2"
             >
-              <span>Proceed to Requisition</span>
+              <span>Proceed to Checkout</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 

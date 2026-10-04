@@ -302,12 +302,6 @@ export default function MenuPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0c0808]/90 via-transparent to-black/30" />
         </div>
 
-        {/* Top Header Label */}
-        <div className="relative z-10 w-full pt-20 sm:pt-24 px-4 sm:px-8 flex justify-between items-center text-white/80 font-meta-bracket text-xs uppercase tracking-widest">
-          <span>[Atelier Menu • Lusaka, Zambia]</span>
-          <span>[Bar &amp; Kitchen]</span>
-        </div>
-
         {/* Bottom Full-bleed MENU Title sitting like the footer's RILEY'S */}
         <div className="relative z-10 w-full overflow-hidden leading-none select-none flex items-end justify-center pointer-events-none mt-auto">
           <motion.h1

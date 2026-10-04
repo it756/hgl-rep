@@ -73,12 +73,17 @@ export interface MenuItem {
 
 export interface Experience {
   id: string;
+  slug?: string;
   title: string;
   subtitle: string;
+  dateBadge?: string;
   dateOrSchedule: string;
   description: string;
   image: string;
   tag: string;
+  time?: string;
+  location?: string;
+  priceZMW?: number;
 }
 
 export const PRODUCTS: Product[] = [
@@ -631,35 +636,99 @@ export const MENU_ITEMS: MenuItem[] = [
 export const EXPERIENCES: Experience[] = [
   {
     id: "exp-1",
-    title: "Friday Sunset Live Sessions",
-    subtitle: "Acoustic Soul & Afro Jazz",
-    dateOrSchedule: "Every Friday • 18:00 — 22:00",
+    slug: "chef-s-seasonal-tasting",
+    title: "CHEF'S SEASONAL TASTING",
+    subtitle: "A MULTI-COURSE TASTING MENU FOCUSED ON SEASONAL INGREDIENTS.",
+    dateBadge: "JANUARY 9, 2026",
+    dateOrSchedule: "Friday, January 9, 2026 • 19:00",
     description:
-      "Unwind with live melodic performances from Lusaka’s finest acoustic performers, paired with our craft IPA drafts and artisan grill platters on the open-air deck.",
+      "A 6-course seasonal culinary odyssey curated by our executive chef, pairing indigenous Zambian produce with modern flame-grill techniques.",
     image:
-      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80",
-    tag: "[Weekly Ritual]",
+      "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1600&q=85",
+    tag: "Tasting Menu",
+    time: "19:00 — 22:30",
+    location: "Main Dining Hall",
+    priceZMW: 650,
   },
   {
     id: "exp-2",
-    title: "Master Botanical Cocktail Lab",
-    subtitle: "Aromatic & Mixology Workshop",
-    dateOrSchedule: "Bi-Weekly Saturdays • 16:00",
+    slug: "cocktail-laboratory-night",
+    title: "COCKTAIL LABORATORY NIGHT",
+    subtitle:
+      "EXPERIMENTAL COCKTAILS, INFUSED SPIRITS, AND BEHIND-THE-BAR DEMOS.",
+    dateBadge: "JANUARY 14, 2026",
+    dateOrSchedule: "Wednesday, January 14, 2026 • 18:30",
     description:
-      "An intimate masterclass exploring the botanical infusion principles of craft cocktail mixology, smoke infusions, and artisanal spirit pairings. Includes 4 curated cocktail tastings.",
+      "Sensory mixology workshop exploring botanical infusions, smoked spirits, house bitters, and behind-the-bar craft demonstrations with guided tastings.",
     image:
-      "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80",
-    tag: "[Limited Masterclass]",
+      "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1600&q=85",
+    tag: "Mixology",
+    time: "18:30 — 21:30",
+    location: "The Cocktail Lounge",
+    priceZMW: 420,
   },
   {
     id: "exp-3",
-    title: "Sunday Smokehouse Roast & Family Day",
-    subtitle: "Slow Smoked Prime Brisket & Ribs",
-    dateOrSchedule: "Every Sunday • 12:00 — 18:00",
+    slug: "stranger-than-paradise",
+    title: "STRANGER THAN PARADISE",
+    subtitle: "CURATED SOUNDS, VINYL SELECTORS, AND LATE NIGHT ATMOSPHERE.",
+    dateBadge: "JANUARY 16, 2026",
+    dateOrSchedule: "Friday, January 16, 2026 • 20:00",
     description:
-      "Low and slow applewood-smoked ribs, tender brisket, loaded baked potatoes and craft craft brews in a warm, relaxed hospitality environment.",
+      "A late-night sonic immersion featuring deep groove vinyl selectors, ambient lighting, and bespoke signature highballs under the neon glow.",
     image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
-    tag: "[Family Feast]",
+      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&q=85",
+    tag: "Live Sounds",
+    time: "20:00 — 01:00",
+    location: "The Open-Air Deck",
+    priceZMW: 250,
+  },
+  {
+    id: "exp-4",
+    slug: "cellar-and-wine-evening",
+    title: "SOMMELIER CELLAR DINNER",
+    subtitle: "EXCLUSIVE CELLAR SELECTIONS PAIRED WITH ARTISANAL DISHES.",
+    dateBadge: "JANUARY 21, 2026",
+    dateOrSchedule: "Wednesday, January 21, 2026 • 19:00",
+    description:
+      "An intimate cellar reserve tasting exploring rare vintages and boutique biodynamic wines paired course-by-course with dry-aged meats and artisanal cheeses.",
+    image:
+      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=85",
+    tag: "Wine Dinner",
+    time: "19:00 — 22:00",
+    location: "The Private Cellar Room",
+    priceZMW: 780,
+  },
+  {
+    id: "exp-5",
+    slug: "friday-sunset-live-sessions",
+    title: "FRIDAY SUNSET LIVE SESSIONS",
+    subtitle: "ACOUSTIC SOUL, AFRO JAZZ, AND ARTISAN GRILL PLATTERS.",
+    dateBadge: "JANUARY 28, 2026",
+    dateOrSchedule: "Friday, January 28, 2026 • 18:00",
+    description:
+      "Unwind with live melodic performances from Lusaka’s finest acoustic performers, paired with our craft IPA drafts and artisan flame-grilled platters.",
+    image:
+      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=85",
+    tag: "Weekly Ritual",
+    time: "18:00 — 22:30",
+    location: "The Garden Terrace",
+    priceZMW: 200,
+  },
+  {
+    id: "exp-6",
+    slug: "sunday-smokehouse-roast",
+    title: "SUNDAY SMOKEHOUSE ROAST",
+    subtitle: "SLOW SMOKED PRIME BRISKET, SHORT RIBS, AND CRAFT ALES.",
+    dateBadge: "FEBRUARY 2, 2026",
+    dateOrSchedule: "Sunday, February 2, 2026 • 12:00",
+    description:
+      "Low and slow applewood-smoked ribs, tender brisket, loaded fire-roasted sides, and craft brews in a warm, relaxed communal hospitality feast.",
+    image:
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=85",
+    tag: "Family Feast",
+    time: "12:00 — 18:00",
+    location: "Main Deck & Smoker Yard",
+    priceZMW: 380,
   },
 ];
