@@ -25,6 +25,7 @@ export default function Navbar() {
     { label: "About", href: "/about" },
     { label: "Experiences", href: "/experiences" },
     { label: "Contact", href: "/contact" },
+    { label: "Booking", href: "/reservations" },
   ];
 
   return (
